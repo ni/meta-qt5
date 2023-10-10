@@ -40,6 +40,7 @@ SRC_URI += "\
     file://0026-qsql_odbc-Patch-for-CVE-2023-24607.patch \
     file://CVE-2023-38197-qtbase-5.15.diff \
     file://CVE-2023-32763-qtbase-5.15.diff \
+    file://CVE-2023-37369-qtbase-5.15.diff \
 "
 
 # Disable LTO for now, QT5 patches are being worked upstream, perhaps revisit with
