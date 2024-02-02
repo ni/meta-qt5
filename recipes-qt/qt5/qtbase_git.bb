@@ -41,6 +41,7 @@ SRC_URI += "\
     file://CVE-2023-38197-qtbase-5.15.diff \
     file://CVE-2023-32763-qtbase-5.15.diff \
     file://CVE-2023-37369-qtbase-5.15.diff \
+    file://0026-QSslSocket-make-it-work-with-OpenSSL-v3.patch \
 "
 
 # Disable LTO for now, QT5 patches are being worked upstream, perhaps revisit with
