@@ -37,7 +37,6 @@ SRC_URI += "\
     file://0021-rcc-Just-dcument-file-name-without-full-path-to-redu.patch \
     file://0022-testlib-don-t-track-the-build-or-source-directories.patch \
     file://0023-Remove-unsetting-_FILE_OFFSET_BITS.patch \
-    file://0026-qsql_odbc-Patch-for-CVE-2023-24607.patch \
     file://CVE-2023-32762.patch \
     file://CVE-2023-32763-qtbase-5.15.diff \
     file://CVE-2023-33285-qtbase-5.15.diff \
@@ -50,7 +49,12 @@ SRC_URI += "\
     file://0002-CVE-2023-51714-qtbase-5.15.diff \
     file://0028-Remove-host-paths-from-qmake.patch \
     file://0029-Remove-ptests-with-SRCDIR.patch \
+    file://CVE-2024-25580.patch \
 "
+
+# usually pulled by one of the optional dependencies in PACKAGECONFIG, but with very limited PACKAGECONFIG fails with:
+# src/corelib/io/qresource.cpp:68:12: fatal error: zstd.h: No such file or directory
+DEPENDS = "zstd"
 
 # Disable LTO for now, QT5 patches are being worked upstream, perhaps revisit with
 # next major upgrade of QT
@@ -323,4 +327,4 @@ sed -i \
     $D${OE_QMAKE_PATH_ARCHDATA}/mkspecs/qmodule.pri
 }
 
-SRCREV = "e4391422574aa9aa89fece74f16c07c609cbbae2"
+SRCREV = "4e158f6bfa7d0747d8da70b3b15a44b52e35bb8a"

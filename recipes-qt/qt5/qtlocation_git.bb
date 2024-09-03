@@ -34,9 +34,10 @@ QT_MODULE_BRANCH_MAPBOXGL = "upstream/qt-staging"
 SRC_URI += " \
     ${QT_GIT}/qtlocation-mapboxgl.git;name=qtlocation-mapboxgl;branch=${QT_MODULE_BRANCH_MAPBOXGL};protocol=${QT_GIT_PROTOCOL};destsuffix=git/src/3rdparty/mapbox-gl-native \
     file://0001-mapbox-gl-explicitly-include-cstdint-header.patch;patchdir=src/3rdparty/mapbox-gl-native \
+    file://gcc14-const.patch;patchdir=src/3rdparty/mapbox-gl-native/deps/rapidjson/1.1.0 \
 "
 
-SRCREV_qtlocation = "b6d96559cb9f5e0d79936c89887ea924b2c3514a"
+SRCREV_qtlocation = "f6953a8d604b906b170fb4610e124e7c31260a18"
 SRCREV_qtlocation-mapboxgl = "d3101bbc22edd41c9036ea487d4a71eabd97823d"
 
 SRCREV_FORMAT = "qtlocation_qtlocation-mapboxgl"
