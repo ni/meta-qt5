@@ -47,6 +47,8 @@ SRC_URI += "\
     file://CVE-2024-39936-qtbase-5.15.patch \
 "
 
+CVE_STATUS[CVE-2024-36048] = "cpe-incorrect: this applies to qtnetworkauth"
+
 # usually pulled by one of the optional dependencies in PACKAGECONFIG, but with very limited PACKAGECONFIG fails with:
 # src/corelib/io/qresource.cpp:68:12: fatal error: zstd.h: No such file or directory
 DEPENDS = "zstd"
