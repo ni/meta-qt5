@@ -57,6 +57,8 @@ SRC_URI += " \
     file://0025-Bootstrap-without-linkat-feature.patch \
 "
 
+CVE_STATUS[CVE-2024-36048] = "cpe-incorrect: this applies to qtnetworkauth"
+
 CLEANBROKEN = "1"
 
 XPLATFORM:toolchain-clang = "linux-oe-clang"
