@@ -7,6 +7,10 @@ LIC_FILES_CHKSUM = " \
 require qt5.inc
 require qt5-git.inc
 
+SRC_URI += "\
+    file://CVE-2024-36048-qtnetworkauth-5.15.diff \
+"
+
 DEPENDS += "qtbase"
 
 SRCREV = "ed2291d454fac207f6b1555d30b9227e51be611b"
