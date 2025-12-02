@@ -42,6 +42,11 @@ SRC_URI += "\
     file://0022-testlib-don-t-track-the-build-or-source-directories.patch \
     file://0027-xkb-fix-build-with-libxkbcommon-1.6.0-and-later.patch \
     file://CVE-2024-39936-qtbase-5.15.patch \
+    file://CVE-2023-38197-qtbase-5.15.diff \
+    file://CVE-2023-32763-qtbase-5.15.diff \
+    file://CVE-2023-37369-qtbase-5.15.diff \
+    file://0001-CVE-2023-51714-qtbase-5.15.diff \
+    file://0002-CVE-2023-51714-qtbase-5.15.diff \
 "
 
 # common for qtbase-native and nativesdk-qtbase
